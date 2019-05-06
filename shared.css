@@ -84,11 +84,9 @@ main {
   list-style: none;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
 }
 
 .main-nav__item {
-  /* display: inline-block; */
   margin: 0 1rem;
 }
 
@@ -131,10 +129,7 @@ main {
   .main-nav {
     display: flex;
     flex-direction: row;
-    /* display: inline-block; */
     text-align: right;
-    /* width: calc(100% - 44px); */
-    /* vertical-align: middle; */
   }
 }
 
@@ -178,12 +173,14 @@ main {
 }
 
 .mobile-nav__items {
-  width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
