@@ -36,9 +36,8 @@ main {
   padding: 0.5rem 1rem;
   z-index: 1;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-button {
@@ -67,11 +66,13 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
+  /* width: 20px; */
 }
 
 .main-header__brand img {
   height: 2.5rem;
   vertical-align: middle;
+  /* width: 100%; */
 }
 
 .main-nav {
@@ -83,7 +84,6 @@ main {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: row;
 }
 
 .main-nav__item {
@@ -128,8 +128,6 @@ main {
 
   .main-nav {
     display: flex;
-    flex-direction: row;
-    text-align: right;
   }
 }
 
@@ -143,12 +141,13 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__link {
-  display: block;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -173,9 +172,10 @@ main {
 }
 
 .mobile-nav__items {
+  width: 90%;
   height: 100%;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -225,7 +225,11 @@ main {
 
 @media (min-width: 40rem) {
   .main-footer__link {
-    display: inline-block;
     margin: 0 1rem;
+  }
+
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
   }
 }
